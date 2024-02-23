@@ -20,12 +20,13 @@ const handleFormSubmit = async (e) => {
   await handleSubmit(e);
   if (state.succeeded) {
     // Limpiar los campos del formulario
-    setFormData({
+   setFormData({
       fullName: "",
       email: "",
       phone: "",
       message: "",
     });
+
     const successTitle = "Message Sent";
     const successMessage =
       "Thank you for your message. It will be replied to promptly.";

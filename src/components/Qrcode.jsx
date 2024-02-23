@@ -1,5 +1,7 @@
-import QRCode from 'qrcode.react';
+
+import QRCode from "qrcode.react";
 import { mobilQR } from "../assets"
+
 
 const QrCodeBar = () => {
 
@@ -19,16 +21,13 @@ return (
     </div>
     <div className="justify-center bg-white mt-8 border rounded-md border-white p-4">
       <QRCode
-        value={"https://distinctivehillc.com"}
+        value={"https://www.distinctivehillc.com"}
         size={200}
         bgColor="#fff"
       />
     </div>
   </div>
 );
-
-
-
 }
 
 
