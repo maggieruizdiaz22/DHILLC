@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useForm } from "@formspree/react";
 
 export default function ContactUs() {
-  const [state, handleSubmit] = useForm("xjvnwwbk");
+  const [state, handleSubmit] = useForm("xrgnkgqa");
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
