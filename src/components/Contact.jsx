@@ -4,6 +4,7 @@ import { Button2 } from "./Button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useForm } from "@formspree/react";
+import swal from "sweetalert";
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("xrgnkgqa");
@@ -24,6 +25,15 @@ const handleFormSubmit = async (e) => {
       email: "",
       phone: "",
       message: "",
+    });
+    const successTitle = "Message Sent";
+    const successMessage =
+      "Thank you for your message. It will be replied to promptly.";
+    swal({
+      title: successTitle,
+      text: successMessage,
+      icon: "success",
+      button: "Got it",
     });
   }
   };
